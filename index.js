@@ -365,27 +365,16 @@ function AgregarLibro() {
         peso : prompt('peso')
     }
 
-    console.log('antes de agregar:');
-    console.log(libros);
-
     libros.push(newlibro)
     console.log('libro agregado');
     console.log(newlibro); 
-    
-    console.log("despues de agregar:");
-    console.log(libros);
 }
 
 function EliminarLibros() {
-    console.log('antes de eliminar:');
-    console.log(libros);
 
     libroEliminado = libros.pop()
     console.log('libro eliminado:');
     console.log(libroEliminado);
-
-    console.log("despues de agregar:");
-    console.log(libros);
 }
 
 function VerLibros() {
