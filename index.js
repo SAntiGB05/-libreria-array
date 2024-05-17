@@ -430,7 +430,7 @@ function Menu2() {
     let menu = 'Desea continuar en el menu\n\n';
     menu += '1: si\n';
     menu += '2: no\n\n';
-    menu += 'Elija una opción: ';
+    menu += 'Elija una opcion: ';
     let codigo = parseInt(prompt(menu));
 
     return codigo;
@@ -445,11 +445,11 @@ function EjecutarMenu2() {
                 EjecutarMenu();
                 break;
             case 2:
-                alert('Salió del menú');
+                alert('Salio del menu');
                 continuar = false;
                 break;
             default:
-                alert('Opción no válida. Intente de nuevo.');
+                alert('Opcion no valida. Intente de nuevo.');
                 break;
         }
     }
