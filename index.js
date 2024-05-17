@@ -344,26 +344,27 @@ let libros = [
     
 ]    
 
-let newlibro = {
-
-    titulo : "Sapiens: De animales a dioses", 
-    autor : 'Yuval Noah Harari',
-    genero : 'No ficción, Historia',
-    idioma : 'Español',
-    precio : 22.50,
-    formato : 'Ebook',
-    isbn : '978-8499926223',
-    drescripcion : 'Un recorrido por la historia de la humanidad desde los primeros Homo sapiens hasta las revoluciones del siglo XXI', 
-    estado : 'Nuevo',
-    ubicacion : 'Madrid, España',
-    fecha : 2014,
-    editorial : 'Debate',
-    paginas : 496, 
-    dimensiones : ' N/A (formato digital)',
-    peso : 'N/A (formato digital)'
-}
-
 function AgregarLibro() {
+
+    let newlibro = {
+
+        titulo : prompt('titulo'), 
+        autor : prompt('autor'),
+        genero : prompt('genero'),
+        idioma : prompt('idioma'),
+        precio : prompt('precio'),
+        formato : prompt('formato'),
+        isbn : prompt('isbn'),
+        drescripcion : prompt('drescripcion'), 
+        estado : prompt('estado'),
+        ubicacion : prompt('ubicacion'),
+        fecha : prompt('fecha'),
+        editorial : prompt('editorial'),
+        paginas : prompt('paginas'), 
+        dimensiones : prompt('dimensiones'),
+        peso : prompt('peso')
+    }
+
     console.log('antes de agregar:');
     console.log(libros);
 
@@ -426,27 +427,31 @@ function EjecutarMenu() {
 }
 
 function Menu2() {
-    menu = 'Desea continuar en el menu\n\n'
-    menu += '1: si\n'
-    menu += '2: no\n\n'
-    menu += 'elija una opcion\n'
-    let codigo = parseInt(prompt(menu))
+    let menu = 'Desea continuar en el menu\n\n';
+    menu += '1: si\n';
+    menu += '2: no\n\n';
+    menu += 'Elija una opción: ';
+    let codigo = parseInt(prompt(menu));
 
-    return codigo
+    return codigo;
 }
 
 function EjecutarMenu2() {
-    let x = Menu2()
-    switch (x) {
-    case 1:
-        EjecutarMenu()
-        break;
-    case 2:
-        alert('salio del menu')
-        break;
-    default: 
-
-        break;
+    let continuar = true;
+    while (continuar) {
+        let x = Menu2();
+        switch (x) {
+            case 1:
+                EjecutarMenu();
+                break;
+            case 2:
+                alert('Salió del menú');
+                continuar = false;
+                break;
+            default:
+                alert('Opción no válida. Intente de nuevo.');
+                break;
+        }
     }
 }
 
