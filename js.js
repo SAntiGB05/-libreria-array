@@ -344,7 +344,6 @@ let libros = [
     
 ]    
 
-
 let newlibro = {
 
     titulo : "Sapiens: De animales a dioses", 
@@ -364,19 +363,91 @@ let newlibro = {
     peso : 'N/A (formato digital)'
 }
 
-console.log('antes de agregar:');
-console.log(libros);
+function AgregarLibro() {
+    console.log('antes de agregar:');
+    console.log(libros);
 
-libros.push(newlibro)
-console.log('libro agregado');
-console.log(newlibro);
+    libros.push(newlibro)
+    console.log('libro agregado');
+    console.log(newlibro); 
+    
+    console.log("despues de agregar:");
+    console.log(libros);
+}
 
-console.log("despues de agregar:");
-console.log(libros);
+function EliminarLibros() {
+    console.log('antes de eliminar:');
+    console.log(libros);
 
-libroEliminado = libros.shift()
-console.log('libro eliminado:');
-console.log(libroEliminado);
+    libroEliminado = libros.pop()
+    console.log('libro eliminado:');
+    console.log(libroEliminado);
 
-console.log('pila actual de libros');
-console.log(libros);
+    console.log("despues de agregar:");
+    console.log(libros);
+}
+
+function VerLibros() {
+    console.log('pila actual de libros');
+    console.log(libros);
+}
+
+function Menu() {
+    menu = 'Menu libreria\n\n'
+    menu += '1: agregar nuevo libro\n'
+    menu += '2: Eliminar libro\n'
+    menu += '3: Mostrar pila de libros\n\n'
+    menu += 'elija una opcion\n'
+    let codigo = parseInt(prompt(menu))
+
+    return codigo
+}
+
+function EjecutarMenu() {
+    let x = Menu()
+    switch (x) {
+    case 1:
+        AgregarLibro()
+        EjecutarMenu2()
+        break;
+    case 2:
+        EliminarLibros()
+        EjecutarMenu2()
+        break;
+    case 3:
+        VerLibros()
+        EjecutarMenu2()
+        break;
+    default: 
+        false;
+        break;
+ 
+    }
+}
+
+function Menu2() {
+    menu = 'Desea continuar en el menu\n\n'
+    menu += '1: si\n'
+    menu += '2: no\n\n'
+    menu += 'elija una opcion\n'
+    let codigo = parseInt(prompt(menu))
+
+    return codigo
+}
+
+function EjecutarMenu2() {
+    let x = Menu2()
+    switch (x) {
+    case 1:
+        EjecutarMenu()
+        break;
+    case 2:
+        alert('salio del menu')
+        break;
+    default: 
+
+        break;
+    }
+}
+
+EjecutarMenu()
