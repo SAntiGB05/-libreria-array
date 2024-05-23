@@ -8,7 +8,7 @@ let libros = [
         precio : 18.99,
         formato : 'Tapa blanda',
         isbn : '978-0307474728',
-        drescripcion : 'La novela narra la historia de la familia Buendía a lo largo de siete generaciones en el ficticio pueblo de Macondo.', 
+        descripcion : 'La novela narra la historia de la familia Buendía a lo largo de siete generaciones en el ficticio pueblo de Macondo.', 
         estado : 'nuevo',
         ubicacion : 'Bogotá, Colombia',
         fecha : 1967,
@@ -26,11 +26,11 @@ let libros = [
         precio : 22.50,
         formato : 'Ebook',
         isbn : '978-8499926223',
-        drescripcion : 'Un recorrido por la historia de la humanidad desde los primeros Homo sapiens hasta las revoluciones del siglo XXI', 
+        descripcion : 'Un recorrido por la historia de la humanidad desde los primeros Homo sapiens hasta las revoluciones del siglo XXI', 
         estado : 'Nuevo',
         ubicacion : 'Madrid, España',
         fecha : 2014,
-        editorial : 'Debate',
+        editorial : 'Editorial Sudamericana',
         paginas : 496, 
         dimensiones : ' N/A (formato digital)',
         peso : 'N/A (formato digital)'
@@ -44,11 +44,11 @@ let libros = [
         precio : 7.99,
         formato : 'Tapa dura',
         isbn : '978-0451524935',
-        drescripcion : 'La novela presenta una sociedad totalitaria bajo la vigilancia constante del Gran Hermano', 
+        descripcion : 'La novela presenta una sociedad totalitaria bajo la vigilancia constante del Gran Hermano', 
         estado : 'Usado, como nuevo',
         ubicacion : 'Londres, Reino Unido',
         fecha : 1949,
-        editorial : '',
+        editorial : 'Editorial Sudamericana',
         paginas : 328, 
         dimensiones : '14 x 2.5 x 21 cm',
         peso : '420 gramos'
@@ -66,7 +66,7 @@ let libros = [
         estado: 'Nuevo',
         ubicacion: 'Buenos Aires, Argentina',
         fecha_publicacion: 1988,
-        editorial: 'HarperOne',
+        editorial : 'Editorial Sudamericana',
         paginas: 208,
         dimensiones: '13.5 x 1.3 x 20.3 cm',
         peso: '200 gramos'
@@ -84,7 +84,7 @@ let libros = [
         estado: 'Nuevo',
         ubicacion: 'Nueva York, EE.UU.',
         fecha_publicacion: 1960,
-        editorial: 'J.B. Lippincott & Co.',
+        editorial : 'Editorial Sudamericana',
         paginas: 336,
         dimensiones: '10.5 x 2.5 x 17.5 cm',
         peso: '290 gramos'
@@ -120,7 +120,7 @@ let libros = [
         estado: "Usado",
         ubicacion: "Estante 1, Biblioteca de la Ciudad",
         fecha_publicacion: "25 de junio de 1947",
-        editorial: "Contact",
+        editorial: 'Ediciones B',
         paginas: 218,
         dimensiones: "20.5 x 13.5 x 2.5 cm",
         peso: "350 gramos"
@@ -138,7 +138,7 @@ let libros = [
         estado: "Usado",
         ubicacion: "Estante 2, Biblioteca de la Ciudad",
         fecha_publicacion: "1883",
-        editorial: "Cassell and Company",
+        editorial: 'Ediciones B',
         paginas: 240,
         dimensiones: "20.5 x 13.5 x 2.5 cm",
         peso: "350 gramos"
@@ -156,7 +156,7 @@ let libros = [
         estado: "Nuevo",
         ubicacion: "Biblioteca digital",
         fecha_publicacion: "18 de marzo de 2003",
-        editorial: "Doubleday",
+        editorial: 'Ediciones B',
         paginas: 454,
         dimensiones: "N/A",
         peso: "N/A"
@@ -174,7 +174,7 @@ let libros = [
         estado: "Usado",
         ubicacion: "Estante 3, Biblioteca de la Ciudad",
         fecha_publicacion: "1946",
-        editorial: "Wiener Volksbuchhandlung",
+        editorial: 'Ediciones B',
         paginas: 160,
         dimensiones: "20.5 x 13.5 x 2.5 cm",
         peso: "350 gramos"
@@ -210,7 +210,7 @@ let libros = [
         estado: 'Nuevo',
         ubicacion: 'Londres, Reino Unido',
         fecha_publicacion: 1813,
-        editorial: 'Penguin Classics',
+        editorial: "Doubleday",
         paginas: 480,
         dimensiones: '12.9 x 2.5 x 19.8 cm',
         peso: '340 gramos'
@@ -228,7 +228,7 @@ let libros = [
         estado: 'Nuevo',
         ubicacion: 'Ciudad de México, México',
         fecha_publicacion: 1943,
-        editorial: 'Harcourt, Inc',
+        editorial: "Doubleday",
         paginas: 96,
         dimensiones: '12.7 x 1.3 x 19 cm',
         peso: '200 gramos'
@@ -246,7 +246,7 @@ let libros = [
         estado: 'Nuevo',
         ubicacion: 'Los Ángeles, EE.UU.',
         fecha_publicacion: 1925,
-        editorial: 'Scribner',
+        editorial: "Doubleday",
         paginas: 180,
         dimensiones: '13.3 x 1.3 x 20.3 cm',
         peso: '200 gramos'
@@ -264,7 +264,7 @@ let libros = [
         estado: 'Nuevo',
         ubicacion: 'Chicago, EE.UU.',
         fecha_publicacion: 1951,
-        editorial: 'Little, Brown and Company',
+        editorial: "Doubleday",
         paginas: 277,
         dimensiones: '10.6 x 1.8 x 17.4 cm',
         peso: '220 gramos'
@@ -282,7 +282,7 @@ let libros = [
         estado: 'Nuevo',
         ubicacion: 'San Francisco, EE.UU.',
         fecha_publicacion: 1932,
-        editorial: 'Harper Perennial',
+        editorial: 'Harcourt, Inc',
         paginas: 288,
         dimensiones: '13 x 1.8 x 20.3 cm',
         peso: '240 gramos',
@@ -296,11 +296,11 @@ let libros = [
         precio : 7.99,
         formato : 'Tapa dura',
         isbn : '978-0451524935',
-        drescripcion : 'La novela presenta una sociedad totalitaria bajo la vigilancia constante del Gran Hermano', 
+        descripcion : 'La novela presenta una sociedad totalitaria bajo la vigilancia constante del Gran Hermano', 
         estado : 'Usado, como nuevo',
         ubicacion : 'Londres, Reino Unido',
         fecha : 1949,
-        editorial : '',
+        editorial: 'Harcourt, Inc',
         paginas : 328, 
         dimensiones : '14 x 2.5 x 21 cm',
         peso : '420 gramos'
@@ -318,7 +318,7 @@ let libros = [
         estado: 'Nuevo',
         ubicacion: 'Barcelona, España',
         fecha_publicacion: 1960,
-        editorial: 'Ediciones B',
+        editorial: 'Harcourt, Inc',
         paginas: 384,
         dimensiones: '14 x 3 x 21 cm',
         peso: '350 gramos'
@@ -355,7 +355,7 @@ function AgregarLibro() {
         precio : prompt('precio'),
         formato : prompt('formato'),
         isbn : prompt('isbn'),
-        drescripcion : prompt('drescripcion'), 
+        descripcion : prompt('descripcion'), 
         estado : prompt('estado'),
         ubicacion : prompt('ubicacion'),
         fecha : prompt('fecha'),
@@ -386,7 +386,19 @@ function Menu() {
     menu = 'Menu libreria\n\n'
     menu += '1: agregar nuevo libro\n'
     menu += '2: Eliminar libro\n'
-    menu += '3: Mostrar pila de libros\n\n'
+    menu += '3: Mostrar pila de libros\n'
+    menu += '4: Mostrar titulo\n'
+    menu += '5: Mostrar idioma\n'
+    menu += '6: Mostrar descripcion\n'
+    menu += '7: Mostrar genero\n'
+    menu += '8: Mostrar precio\n'
+    menu += '9: Mostrar ubicacion\n'
+    menu += '10: Mostrar fecha publicacion\n'
+    menu += '11: Mostrar dimensiones\n'
+    menu += '12: Mostrar peso\n'
+    menu += '13: Mostrar isbn\n'
+    menu += '14: Mostrar estado\n'
+    menu += '15: Mostrar descuento\n\n'
     menu += 'elija una opcion\n'
     let codigo = parseInt(prompt(menu))
 
@@ -408,6 +420,54 @@ function EjecutarMenu() {
         VerLibros()
         EjecutarMenu2()
         break;
+    case 4:
+        console.table(TITULO)
+        EjecutarMenu2()
+        break;
+    case 5:
+        console.table(IDIOMA)
+        EjecutarMenu2()
+        break; 
+    case 6:
+        console.table(DESCRIPCION)
+        EjecutarMenu2()
+        break;
+    case 7:
+        console.table(GENERO)
+        EjecutarMenu2()
+        break;
+    case 8:
+        console.table(PRECIO)
+        EjecutarMenu2()
+        break;
+    case 9:
+        console.table(UBICACION)
+        EjecutarMenu2()
+        break;
+    case 10:
+        console.table(FECHA_PUBLICACION)
+        EjecutarMenu2()
+        break;  
+    case 11:
+        console.table(DIMENSIONES)
+        EjecutarMenu2()
+        break;
+    case 12:
+        console.table(PESO)
+        EjecutarMenu2()
+        break;
+    case 13:
+        console.table(ISBN)
+        EjecutarMenu2()
+        break;
+    case 14:
+        console.table(ESTADO)
+        EjecutarMenu2()
+        break;
+    case 15:
+        Descuento()
+        EjecutarMenu2()
+        break; 
     default: 
         false;
         break;
@@ -444,4 +504,117 @@ function EjecutarMenu2() {
     }
 }
 
-EjecutarMenu()
+    const TITULO = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        editorial: libros.editorial, 
+        precio: libros.precio
+    }
+    });
+
+
+const IDIOMA = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        idioma: libros.idioma
+    }
+});
+
+const DESCRIPCION = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        descripcion: libros.descripcion
+    }
+});
+
+const GENERO = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        genero: libros.genero
+    }
+});
+
+const PRECIO = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        precio: libros.precio,
+    }
+});
+
+const UBICACION = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        ubicacion: libros.ubicacion
+    }
+});
+
+const FECHA_PUBLICACION = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        fecha_publicacion: libros.fecha_publicacion,
+    }
+});
+
+const DIMENSIONES = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        dimensiones: libros.dimensiones,
+    }
+});
+
+const PESO = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        peso: libros.peso,
+    }
+});
+
+const ISBN = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        isbn: libros.isbn,
+    }
+});
+
+const ESTADO = libros.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        estado: libros.estado,
+    }
+});
+
+function Descuento() {
+    const DESCUENTO = libros.map(function(libro) {
+        return {
+            ...libro,
+            descuento: 20,
+            precio_final: libro.precio - (libro.precio * 0.2)
+        };
+    });
+
+    const DESCUENTO_PRECIO = DESCUENTO.map(function(libro) {
+        return {
+            titulo: libro.titulo, 
+            autor: libro.autor, 
+            editorial: libro.editorial, 
+            precio: libro.precio,
+            descuento: libro.descuento,
+            precio_final: libro.precio_final
+        };
+    });
+
+    return console.table(DESCUENTO_PRECIO);
+}
+
+EjecutarMenu();
