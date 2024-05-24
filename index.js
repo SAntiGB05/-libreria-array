@@ -41,7 +41,7 @@ let libros = [
         autor : 'George Orwell',
         genero : 'Ciencia ficción, Distopía',
         idioma : 'Inglés',
-        precio : 7.99,
+        precio : 37.99,
         formato : 'Tapa dura',
         isbn : '978-0451524935',
         descripcion : 'La novela presenta una sociedad totalitaria bajo la vigilancia constante del Gran Hermano', 
@@ -59,7 +59,7 @@ let libros = [
         autor: 'Paulo Coelho',
         genero: 'Ficción, Aventura',
         idioma: 'Español',
-        precio: 15.00 ,
+        precio: 45.00 ,
         formato: 'Tapa blanda',
         isbn: '978-0062315007',
         descripcion: 'La historia de Santiago, un joven pastor andaluz en busca de un tesoro en las pirámides de Egipto.',
@@ -77,7 +77,7 @@ let libros = [
         autor: 'Harper Lee',
         genero: 'Ficción, Drama',
         idioma: 'Inglés',
-        precio: 14.99, 
+        precio: 54.99, 
         formato: 'Tapa blanda',
         isbn: '978-0061120084',
         descripcion: 'Una novela sobre la injusticia racial en el sur de Estados Unidos, vista a través de los ojos de Scout Finch.',
@@ -95,7 +95,7 @@ let libros = [
         autor: 'Harper Lee',
         genero: 'Ficción, Drama',
         idioma: 'Español',
-        precio: 16.95,
+        precio: 56.95,
         formato: 'Tapa dura',
         isbn: '978-8497873178',
         descripcion: 'La traducción al español de "To Kill a Mockingbird", una crítica social sobre la injusticia racial.',
@@ -113,7 +113,7 @@ let libros = [
         autor: "Ana Frank",
         genero: "Memorias",
         idioma: "Español",
-        precio: 15.99,
+        precio: 45.99,
         formato: "Físico",
         isbn: "978-0-451-eda60-9",
         descripcion: "Un libro que narra la historia de Ana Frank, una joven judía que se escondió con su familia en un ático en Amsterdam durante la Segunda Guerra Mundial.",
@@ -131,7 +131,7 @@ let libros = [
         autor: "Robert Louis Stevenson",
         genero: "Aventura",
         idioma: "Español",
-        precio: 12.99,
+        precio: 42.99,
         formato: "Físico",
         isbn: "978-0-451-eda60-9",
         descripcion: "Una novela clásica que narra la historia de un joven llamado Jim Hawkins que se embarca en un viaje para encontrar un tesoro en una isla misteriosa.",
@@ -149,7 +149,7 @@ let libros = [
         autor: "Dan Brown",
         genero: "Thriller",
         idioma: "Inglés",
-        precio: 15.99,
+        precio: 75.99,
         formato: "Digital",
         isbn: "978-0-385-50420-5",
         descripcion: "Una novela que sigue la historia de un profesor de simbología que se ve envuelto en un misterio relacionado con la Iglesia Católica y el Santo Grial.",
@@ -167,7 +167,7 @@ let libros = [
         autor: "Viktor Frankl",
         genero: "Ensayo",
         idioma: "Español",
-        precio: 12.99,
+        precio: 52.99,
         formato: "Físico",
         isbn: "978-0-451-eda60-9",
         descripcion: "Un libro que narra la experiencia del autor en los campos de concentración nazis y su teoría sobre la logoterapia.",
@@ -185,7 +185,7 @@ let libros = [
         autor: "Dan Brown",
         genero: "Thriller",
         idioma: "Inglés",
-        precio: 15.99,
+        precio: 35.99,
         formato: "Digital",
         isbn: "978-0-385-50420-5",
         descripcion: "Una novela que sigue la historia de un profesor de simbología que se ve envuelto en un misterio relacionado con la Iglesia Católica y el Santo Grial.",
@@ -203,7 +203,7 @@ let libros = [
         autor: 'Jane Austen',
         genero: 'Ficción, Romance',
         idioma: 'Inglés',
-        precio: 5.99 ,
+        precio: 15.99 ,
         formato: 'Tapa blanda',
         isbn: '978-0141040349',
         descripcion: 'La historia de Elizabeth Bennet y su relación con el aristocrático Fitzwilliam Darcy.',
@@ -221,7 +221,7 @@ let libros = [
         autor: 'Antoine de Saint-Exupéry',
         genero: 'Ficción, Infantil',
         idioma: 'Español',
-        precio: 12.00 ,
+        precio: 22.00 ,
         formato: 'Tapa dura',
         isbn: '978-0156013987',
         descripcion: 'Un cuento poético que narra las aventuras de un pequeño príncipe que viaja de planeta en planeta.',
@@ -239,7 +239,7 @@ let libros = [
         autor:'F. Scott Fitzgerald',
         genero: 'Ficción, Clásico', 
         idioma: 'Inglés',
-        precio: 10.99,
+        precio: 30.99,
         formato: 'Tapa blanda',
         isbn: '978-0743273565',
         descripcion: 'La historia de Jay Gatsby y su amor por Daisy Buchanan en los años 20 en Estados Unidos.',
@@ -257,7 +257,7 @@ let libros = [
         autor: 'J.D. Salinger',
         genero: 'Ficción, Drama',
         idioma: 'Inglés',
-        precio: 8.99 ,
+        precio: 68.99 ,
         formato: 'Tapa blanda',
         isbn: '978-0316769488',
         descripcion: 'La historia de Holden Caulfield, un adolescente rebelde que ha sido expulsado de varias escuelas.',
@@ -275,7 +275,7 @@ let libros = [
         autor: 'Aldous Huxley',
         genero: 'Ciencia ficción, Distopía',
         idioma: 'Inglés',
-        precio: 13.50 ,
+        precio: 43.50 ,
         formato: 'Tapa blanda',
         isbn: '978-0060850524',
         descripcion: 'Una visión distópica del futuro donde la tecnología controla todos los aspectos de la vida humana.',
@@ -293,7 +293,7 @@ let libros = [
         autor : 'George Orwell',
         genero : 'Ciencia ficción, Distopía',
         idioma : 'Inglés',
-        precio : 7.99,
+        precio : 17.99,
         formato : 'Tapa dura',
         isbn : '978-0451524935',
         descripcion : 'La novela presenta una sociedad totalitaria bajo la vigilancia constante del Gran Hermano', 
@@ -311,7 +311,7 @@ let libros = [
         autor: 'Harper Lee',
         genero: 'Ficción, Drama',
         idioma: 'Español',
-        precio: 16.95,
+        precio: 36.95,
         formato: 'Tapa dura',
         isbn: '978-8497873178',
         descripcion: 'La traducción al español de "To Kill a Mockingbird", una crítica social sobre la injusticia racial.',
@@ -329,7 +329,7 @@ let libros = [
         autor: 'Antoine de Saint-Exupéry',
         genero: 'Ficción, Infantil',
         idioma: 'Español',
-        precio: 12.00 ,
+        precio: 52.00 ,
         formato: 'Tapa dura',
         isbn: '978-0156013987',
         descripcion: 'Un cuento poético que narra las aventuras de un pequeño príncipe que viaja de planeta en planeta.',
@@ -504,14 +504,14 @@ function VerLibros() {
 //     }
 // }
 
-    const TITULO = libros.map(function(libros){
+const TITULO = libros.map(function(libros){
     return{
         titulo: libros.titulo, 
         autor: libros.autor, 
         editorial: libros.editorial, 
         precio: libros.precio
     }
-    });
+});
 
 
 const IDIOMA = libros.map(function(libros){
@@ -617,21 +617,20 @@ function Descuento() {
     return console.table(DESCUENTO_PRECIO);
 }
 
-const LibrosPrecio =
+const LibrosPrecio = 
 libros.filter(function(libros){
-    return libros.precio > 15
-});
-libros.map(function(libros){
+    return libros.precio > 50
+})
+.map(function(libros){
     return{
-        titulo: libros.titulo,
-        autor: libros.autor,
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        editorial: libros.editorial, 
         precio: libros.precio
     }
 });
+ 
 
-
-
-console.table(LibrosPrecio)
 
 
 // EjecutarMenu();
