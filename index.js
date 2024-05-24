@@ -630,7 +630,18 @@ libros.filter(function(libros){
     }
 });
  
+const PaginasLibros = 
+libros.sort((a,b) => b.paginas - a.paginas)
+.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        editorial: libros.editorial, 
+        paginas: libros.paginas
+    }
+});
 
+console.table(PaginasLibros)
 
 
 // EjecutarMenu();
