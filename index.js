@@ -382,127 +382,127 @@ function VerLibros() {
     console.log(libros);
 }
 
-function Menu() {
-    menu = 'Menu libreria\n\n'
-    menu += '1: agregar nuevo libro\n'
-    menu += '2: Eliminar libro\n'
-    menu += '3: Mostrar pila de libros\n'
-    menu += '4: Mostrar titulo\n'
-    menu += '5: Mostrar idioma\n'
-    menu += '6: Mostrar descripcion\n'
-    menu += '7: Mostrar genero\n'
-    menu += '8: Mostrar precio\n'
-    menu += '9: Mostrar ubicacion\n'
-    menu += '10: Mostrar fecha publicacion\n'
-    menu += '11: Mostrar dimensiones\n'
-    menu += '12: Mostrar peso\n'
-    menu += '13: Mostrar isbn\n'
-    menu += '14: Mostrar estado\n'
-    menu += '15: Mostrar descuento\n\n'
-    menu += 'elija una opcion\n'
-    let codigo = parseInt(prompt(menu))
+// function Menu() {
+//     menu = 'Menu libreria\n\n'
+//     menu += '1: agregar nuevo libro\n'
+//     menu += '2: Eliminar libro\n'
+//     menu += '3: Mostrar pila de libros\n'
+//     menu += '4: Mostrar titulo\n'
+//     menu += '5: Mostrar idioma\n'
+//     menu += '6: Mostrar descripcion\n'
+//     menu += '7: Mostrar genero\n'
+//     menu += '8: Mostrar precio\n'
+//     menu += '9: Mostrar ubicacion\n'
+//     menu += '10: Mostrar fecha publicacion\n'
+//     menu += '11: Mostrar dimensiones\n'
+//     menu += '12: Mostrar peso\n'
+//     menu += '13: Mostrar isbn\n'
+//     menu += '14: Mostrar estado\n'
+//     menu += '15: Mostrar descuento\n\n'
+//     menu += 'elija una opcion\n'
+//     let codigo = parseInt(prompt(menu))
 
-    return codigo
-}
+//     return codigo
+// }
 
-function EjecutarMenu() {
-    let x = Menu()
-    switch (x) {
-    case 1:
-        AgregarLibro()
-        EjecutarMenu2()
-        break;
-    case 2:
-        EliminarLibros()
-        EjecutarMenu2()
-        break;
-    case 3:
-        VerLibros()
-        EjecutarMenu2()
-        break;
-    case 4:
-        console.table(TITULO)
-        EjecutarMenu2()
-        break;
-    case 5:
-        console.table(IDIOMA)
-        EjecutarMenu2()
-        break; 
-    case 6:
-        console.table(DESCRIPCION)
-        EjecutarMenu2()
-        break;
-    case 7:
-        console.table(GENERO)
-        EjecutarMenu2()
-        break;
-    case 8:
-        console.table(PRECIO)
-        EjecutarMenu2()
-        break;
-    case 9:
-        console.table(UBICACION)
-        EjecutarMenu2()
-        break;
-    case 10:
-        console.table(FECHA_PUBLICACION)
-        EjecutarMenu2()
-        break;  
-    case 11:
-        console.table(DIMENSIONES)
-        EjecutarMenu2()
-        break;
-    case 12:
-        console.table(PESO)
-        EjecutarMenu2()
-        break;
-    case 13:
-        console.table(ISBN)
-        EjecutarMenu2()
-        break;
-    case 14:
-        console.table(ESTADO)
-        EjecutarMenu2()
-        break;
-    case 15:
-        Descuento()
-        EjecutarMenu2()
-        break; 
-    default: 
-        false;
-        break;
+// function EjecutarMenu() {
+//     let x = Menu()
+//     switch (x) {
+//     case 1:
+//         AgregarLibro()
+//         EjecutarMenu2()
+//         break;
+//     case 2:
+//         EliminarLibros()
+//         EjecutarMenu2()
+//         break;
+//     case 3:
+//         VerLibros()
+//         EjecutarMenu2()
+//         break;
+//     case 4:
+//         console.table(TITULO)
+//         EjecutarMenu2()
+//         break;
+//     case 5:
+//         console.table(IDIOMA)
+//         EjecutarMenu2()
+//         break; 
+//     case 6:
+//         console.table(DESCRIPCION)
+//         EjecutarMenu2()
+//         break;
+//     case 7:
+//         console.table(GENERO)
+//         EjecutarMenu2()
+//         break;
+//     case 8:
+//         console.table(PRECIO)
+//         EjecutarMenu2()
+//         break;
+//     case 9:
+//         console.table(UBICACION)
+//         EjecutarMenu2()
+//         break;
+//     case 10:
+//         console.table(FECHA_PUBLICACION)
+//         EjecutarMenu2()
+//         break;  
+//     case 11:
+//         console.table(DIMENSIONES)
+//         EjecutarMenu2()
+//         break;
+//     case 12:
+//         console.table(PESO)
+//         EjecutarMenu2()
+//         break;
+//     case 13:
+//         console.table(ISBN)
+//         EjecutarMenu2()
+//         break;
+//     case 14:
+//         console.table(ESTADO)
+//         EjecutarMenu2()
+//         break;
+//     case 15:
+//         Descuento()
+//         EjecutarMenu2()
+//         break; 
+//     default: 
+//         false;
+//         break;
  
-    }
-}
+//     }
+// }
 
-function Menu2() {
-    let menu = 'Desea continuar en el menu\n\n';
-    menu += '1: si\n';
-    menu += '2: no\n\n';
-    menu += 'Elija una opcion: ';
-    let codigo = parseInt(prompt(menu));
+// function Menu2() {
+//     let menu = 'Desea continuar en el menu\n\n';
+//     menu += '1: si\n';
+//     menu += '2: no\n\n';
+//     menu += 'Elija una opcion: ';
+//     let codigo = parseInt(prompt(menu));
 
-    return codigo;
-}
+//     return codigo;
+// }
 
-function EjecutarMenu2() {
-    let continuar = true;
-    while (continuar) {
-        let x = Menu2();
-        switch (x) {
-            case 1:
-                EjecutarMenu();
-                break;
-            case 2:
-                alert('Salio del menu');
-                continuar = false;
-                break;
-            default:
-                alert('Opcion no valida. Intente de nuevo.');
-                break;
-        }
-    }
-}
+// function EjecutarMenu2() {
+//     let continuar = true;
+//     while (continuar) {
+//         let x = Menu2();
+//         switch (x) {
+//             case 1:
+//                 EjecutarMenu();
+//                 break;
+//             case 2:
+//                 alert('Salio del menu');
+//                 continuar = false;
+//                 break;
+//             default:
+//                 alert('Opcion no valida. Intente de nuevo.');
+//                 break;
+//         }
+//     }
+// }
 
     const TITULO = libros.map(function(libros){
     return{
@@ -617,4 +617,23 @@ function Descuento() {
     return console.table(DESCUENTO_PRECIO);
 }
 
-EjecutarMenu();
+const LibrosPrecio =
+libros.filter(function(libros){
+    return libros.precio > 15
+});
+libros.map(function(libros){
+    return{
+        titulo: libros.titulo,
+        autor: libros.autor,
+        precio: libros.precio
+    }
+});
+
+
+
+console.table(LibrosPrecio)
+
+
+// EjecutarMenu();
+
+
