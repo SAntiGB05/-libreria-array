@@ -617,7 +617,7 @@ function Descuento() {
     return console.table(DESCUENTO_PRECIO);
 }
 
-const LibrosPrecio = 
+const LibrosPrecio50 = 
 libros.filter(function(libros){
     return libros.precio > 50
 })
@@ -641,7 +641,54 @@ libros.sort((a,b) => b.paginas - a.paginas)
     }
 });
 
+const LibrosPrecio11 = 
+libros.filter(function(libros){
+    return libros.precio > 11
+})
+.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        editorial: libros.editorial, 
+        precio: libros.precio
+    }
+});
+
+const LibrosPaginas100 = 
+libros.filter(function(libros){
+    return libros.paginas < 100
+})
+.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        editorial: libros.editorial, 
+        paginas: libros.paginas
+    }
+});
+
+const LibrosPrecio20 = 
+libros.filter(function(libros){
+    return libros.precio > 20
+})
+.map(function(libros){
+    return{
+        titulo: libros.titulo, 
+        autor: libros.autor, 
+        precio: libros.precio, 
+    }
+})
+.sort((a,b) => b.precio - a.precio)
+
+console.table(LibrosPrecio50)
+
 console.table(PaginasLibros)
+
+console.table(LibrosPrecio11)
+
+console.table(LibrosPaginas100)
+
+console.table(LibrosPrecio20)
 
 
 // EjecutarMenu();
