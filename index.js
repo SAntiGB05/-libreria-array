@@ -432,24 +432,31 @@ function VerLibros() {
      return codigo;
  }
 
- function EjecutarMenu2() {
-     let continuar = true;
-     while (continuar) {
-         let x = Menu2();
-         switch (x) {
-             case 1:
-                 EjecutarMenu();
-                 break;
-             case 2:
-                 alert('Salio del menu');
-                 continuar = false;
-                 break;
-             default:
-                 alert('Opcion no valida. Intente de nuevo.');
-                 break;
+
+  function EjecutarMenu2() {
+     let continuar
+     let x = Menu2()
+     switch (x) {
+         case 1:
+             continuar = true
+             break;
+         case 2:
+             alert('Salio del menu');
+             continuar = false;
+             break;
+         default:
+             alert('Opcion no valida. Intente de nuevo.');
+             break;
+     }
+     while (continuar===true) {
+         if(continuar===true){
+             EjecutarMenu()
+             continuar=false
+         }else{
+            continuar=false
          }
      }
- }
+  }
 
  function Menu3() {
     menu = 'Menu listar libros\n\n'
@@ -531,9 +538,9 @@ function EjecutarMenu3() {
 function Menu4() {
     menu = 'Menu resumenes libros\n\n'
     menu += '1: libros con precio mayores a 50\n'
-    menu += '2: lista de paguinas de mayor a menor\n'
+    menu += '2: lista de paginas de mayor a menor\n'
     menu += '3: libros con precio mayores a 11 \n'
-    menu += '4: lista de libros con paguinas menores de 100\n'
+    menu += '4: lista de libros con paginas menores de 100\n'
     menu += '5: libros con precio mayores que 20 de mayor a menor\n\n'
     menu += 'elija una opcion\n'
     let codigo = parseInt(prompt(menu))
