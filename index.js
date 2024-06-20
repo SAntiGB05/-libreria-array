@@ -396,80 +396,70 @@ const TITULO = libros.map(function(libros){
 
 const IDIOMA = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         idioma: libros.idioma
     }
 });
 
 const DESCRIPCION = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         descripcion: libros.descripcion
     }
 });
 
 const GENERO = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         genero: libros.genero
     }
 });
 
 const PRECIO = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         precio: libros.precio,
     }
 });
 
 const UBICACION = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         ubicacion: libros.ubicacion
     }
 });
 
 const FECHA_PUBLICACION = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         fecha_publicacion: libros.fecha_publicacion,
     }
 });
 
 const DIMENSIONES = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         dimensiones: libros.dimensiones,
     }
 });
 
 const PESO = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         peso: libros.peso,
     }
 });
 
 const ISBN = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         isbn: libros.isbn,
     }
 });
 
 const ESTADO = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
-        autor: libros.autor, 
+        titulo: libros.titulo,  
         estado: libros.estado,
     }
 });
