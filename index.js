@@ -394,7 +394,7 @@ const TITULO = libros.map(function(libros){
 
 const IDIOMA = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         idioma: libros.idioma
     }
@@ -402,7 +402,7 @@ const IDIOMA = libros.map(function(libros){
 
 const DESCRIPCION = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         descripcion: libros.descripcion
     }
@@ -410,7 +410,7 @@ const DESCRIPCION = libros.map(function(libros){
 
 const GENERO = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         genero: libros.genero
     }
@@ -418,7 +418,7 @@ const GENERO = libros.map(function(libros){
 
 const PRECIO = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         precio: libros.precio,
     }
@@ -426,7 +426,7 @@ const PRECIO = libros.map(function(libros){
 
 const UBICACION = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         ubicacion: libros.ubicacion
     }
@@ -434,7 +434,7 @@ const UBICACION = libros.map(function(libros){
 
 const FECHA_PUBLICACION = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         fecha_publicacion: libros.fecha_publicacion,
     }
@@ -442,7 +442,7 @@ const FECHA_PUBLICACION = libros.map(function(libros){
 
 const DIMENSIONES = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         dimensiones: libros.dimensiones,
     }
@@ -450,7 +450,7 @@ const DIMENSIONES = libros.map(function(libros){
 
 const PESO = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         peso: libros.peso,
     }
@@ -458,7 +458,7 @@ const PESO = libros.map(function(libros){
 
 const ISBN = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         isbn: libros.isbn,
     }
@@ -466,7 +466,7 @@ const ISBN = libros.map(function(libros){
 
 const ESTADO = libros.map(function(libros){
     return{
-        titulo: libros.titulo, 
+         
         autor: libros.autor, 
         estado: libros.estado,
     }
@@ -501,7 +501,7 @@ libros.filter(function(libros){
 })
 .map(function(libros){
     return{
-        titulo: libros.titulo, 
+        titulo: libros.titulo,
         autor: libros.autor, 
         editorial: libros.editorial, 
         precio: libros.precio
