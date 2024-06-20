@@ -382,6 +382,8 @@ function VerLibros() {
     console.log(libros);
 }
 
+
+
 const TITULO = libros.map(function(libros){
     return{
         titulo: libros.titulo, 
@@ -394,7 +396,7 @@ const TITULO = libros.map(function(libros){
 
 const IDIOMA = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         idioma: libros.idioma
     }
@@ -402,7 +404,7 @@ const IDIOMA = libros.map(function(libros){
 
 const DESCRIPCION = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         descripcion: libros.descripcion
     }
@@ -410,7 +412,7 @@ const DESCRIPCION = libros.map(function(libros){
 
 const GENERO = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         genero: libros.genero
     }
@@ -418,7 +420,7 @@ const GENERO = libros.map(function(libros){
 
 const PRECIO = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         precio: libros.precio,
     }
@@ -426,7 +428,7 @@ const PRECIO = libros.map(function(libros){
 
 const UBICACION = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         ubicacion: libros.ubicacion
     }
@@ -434,7 +436,7 @@ const UBICACION = libros.map(function(libros){
 
 const FECHA_PUBLICACION = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         fecha_publicacion: libros.fecha_publicacion,
     }
@@ -442,7 +444,7 @@ const FECHA_PUBLICACION = libros.map(function(libros){
 
 const DIMENSIONES = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         dimensiones: libros.dimensiones,
     }
@@ -450,7 +452,7 @@ const DIMENSIONES = libros.map(function(libros){
 
 const PESO = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         peso: libros.peso,
     }
@@ -458,7 +460,7 @@ const PESO = libros.map(function(libros){
 
 const ISBN = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         isbn: libros.isbn,
     }
@@ -466,7 +468,7 @@ const ISBN = libros.map(function(libros){
 
 const ESTADO = libros.map(function(libros){
     return{
-         
+        titulo: libros.titulo, 
         autor: libros.autor, 
         estado: libros.estado,
     }
@@ -501,7 +503,7 @@ libros.filter(function(libros){
 })
 .map(function(libros){
     return{
-        titulo: libros.titulo,
+        titulo: libros.titulo, 
         autor: libros.autor, 
         editorial: libros.editorial, 
         precio: libros.precio
@@ -694,294 +696,294 @@ function BuscarPeso() {
     console.table(algunlibro);
 }
 
-function Menu() {
-    menu = 'Menu libreria\n\n'
-    menu += '1: agregar nuevo libro\n'
-    menu += '2: Eliminar libro\n'
-    menu += '3: Mostrar pila de libros\n'
-    menu += '4: Mostrar menu listar libros\n'
-    menu += '5: Mostrar menu resumenes libros\n'
-    menu += '6: Mostrar menu de busqueda de libros\n'
+  function Menu() {
+      menu = 'Menu libreria\n\n'
+      menu += '1: agregar nuevo libro\n'
+      menu += '2: Eliminar libro\n'
+      menu += '3: Mostrar pila de libros\n'
+      menu += '4: Mostrar menu listar libros\n'
+      menu += '5: Mostrar menu resumenes libros\n'
+      menu += '6: Mostrar menu de busqueda de libros\n'
+      let codigo = parseInt(prompt(menu))
+
+      return codigo
+  }
+
+function EjecutarMenu() {
+    let codigoMenu = Menu()
+    switch (codigoMenu) {
+    case 1:
+        AgregarLibro()
+        EjecutarMenu2()
+        break;
+    case 2:
+        EliminarLibros()
+        EjecutarMenu2()
+        break;
+    case 3:
+        VerLibros()
+        EjecutarMenu2()
+        break;
+    case 4:
+        EjecutarMenu3()
+        break; 
+    case 5:
+        EjecutarMenu4()
+        break;
+    case 6:
+        EjecutarMenu5()
+        break;
+      default: 
+        false;
+        break;
+    }
+}
+
+  function Menu2() {
+      let menu = 'Desea continuar en el menu\n\n';
+      menu += '1: si\n';
+      menu += '2: no\n\n';
+      menu += 'Elija una opcion: ';
+      let codigo = parseInt(prompt(menu));
+
+      return codigo;
+  }
+
+
+   function EjecutarMenu2() {
+      let continuar
+      let codigoMenu = Menu2()
+      switch (codigoMenu) {
+          case 1:
+              continuar = true
+              break;
+          case 2:
+              alert('Salio del menu');
+              continuar = false;
+              break;
+          default:
+              alert('Opcion no valida. Intente de nuevo.');
+              break;
+      }
+      while (continuar===true) {
+          if(continuar===true){
+              EjecutarMenu()
+              continuar=false
+          }else{
+             continuar=false
+          }
+      }
+   }
+
+  function Menu3() {
+     menu = 'Menu listar libros\n\n'
+     menu += '1: Mostrar titulo\n'
+     menu += '2: Mostrar idioma\n'
+     menu += '3: Mostrar descripcion\n'
+     menu += '4: Mostrar genero\n'
+     menu += '5: Mostrar precio\n'
+     menu += '6: Mostrar ubicacion\n'
+     menu += '7: Mostrar fecha publicacion\n'
+     menu += '8: Mostrar dimensiones\n'
+     menu += '9: Mostrar peso\n'
+     menu += '10: Mostrar isbn\n'
+     menu += '11: Mostrar estado\n'
+     menu += '12: Mostrar descuento\n\n'
+     menu += 'elija una opcion\n'
+     let codigo = parseInt(prompt(menu))
+
+     return codigo
+ }
+
+ function EjecutarMenu3() {
+     let codigoMenu = Menu3()
+     switch (codigoMenu) {
+     case 1:
+         console.table(TITULO)
+         EjecutarMenu2()
+         break;
+     case 2:
+         console.table(IDIOMA)
+         EjecutarMenu2()
+         break; 
+     case 3:
+         console.table(DESCRIPCION)
+         EjecutarMenu2()
+         break;
+     case 4:
+         console.table(GENERO)
+         EjecutarMenu2()
+         break;
+     case 5:
+         console.table(PRECIO)
+         EjecutarMenu2()
+         break;
+     case 6:
+         console.table(UBICACION)
+         EjecutarMenu2()
+         break;
+     case 7:
+         console.table(FECHA_PUBLICACION)
+         EjecutarMenu2()
+         break;  
+     case 8:
+         console.table(DIMENSIONES)
+         EjecutarMenu2()
+         break;
+     case 9:
+         console.table(PESO)
+         EjecutarMenu2()
+         break;
+     case 10:
+         console.table(ISBN)
+         EjecutarMenu2()
+         break;
+     case 11:
+         console.table(ESTADO)
+         EjecutarMenu2()
+         break;
+     case 12:
+         Descuento()
+         EjecutarMenu2()
+         break; 
+     default: 
+         false;
+         break;
+     }
+ }
+
+ function Menu4() {
+     menu = 'Menu resumenes libros\n\n'
+     menu += '1: libros con precio mayores a 50\n'
+     menu += '2: lista de paginas de mayor a menor\n'
+     menu += '3: libros con precio mayores a 11 \n'
+     menu += '4: lista de libros con paginas menores de 100\n'
+     menu += '5: libros con precio mayores que 20 de mayor a menor\n\n'
+     menu += 'elija una opcion\n'
+     let codigo = parseInt(prompt(menu))
+
+     return codigo
+ }
+
+ function EjecutarMenu4() {
+     let codigoMenu = Menu4()
+     switch (codigoMenu) {
+     case 1:
+         console.table(LibrosPrecio50)
+         EjecutarMenu2()
+         break;
+     case 2:
+         console.table(PaginasLibros)
+         EjecutarMenu2()
+         break; 
+     case 3:
+         console.table(LibrosPrecio11)
+         EjecutarMenu2()
+         break;
+     case 4:
+         console.table(LibrosPaginas100)
+         EjecutarMenu2()
+         break;
+     case 5:
+         console.table(LibrosPrecio20)
+         EjecutarMenu2()
+         break;
+     default: 
+         false;
+         break;
+     }
+ }
+
+ function Menu5() {
+    menu = 'Menu busqueda de libros\n\n'
+    menu += '1: Buscar titulo\n'
+    menu += '2: Buscar autor\n'
+    menu += '3: Buscar fecha de publicacion\n'
+    menu += '4: Buscar genero\n'
+    menu += '5: Buscar idioma\n'
+    menu += '6: Buscar precio\n'
+    menu += '7: Buscar formato\n'
+    menu += '8: Buscar isbn\n'
+    menu += '9: Buscar descripcion\n'
+    menu += '10: Buscar estado\n'
+    menu += '11: Buscar ubicacion\n'
+    menu += '12: Buscar editorial\n'
+    menu += '13: Buscar paginas\n'
+    menu += '14: Buscar dimenciones\n'
+    menu += '15: Buscar peso\n\n'
+    menu += 'elija una opcion\n'
     let codigo = parseInt(prompt(menu))
 
     return codigo
 }
 
-function EjecutarMenu() {
-  let codigoMenu = Menu()
-  switch (codigoMenu) {
-  case 1:
-      AgregarLibro()
-      EjecutarMenu2()
-      break;
-  case 2:
-      EliminarLibros()
-      EjecutarMenu2()
-      break;
-  case 3:
-      VerLibros()
-      EjecutarMenu2()
-      break;
-  case 4:
-      EjecutarMenu3()
-      break; 
-  case 5:
-      EjecutarMenu4()
-      break;
-  case 6:
-      EjecutarMenu5()
-      break;
-    default: 
-      false;
-      break;
-  }
-}
-
-function Menu2() {
-    let menu = 'Desea continuar en el menu\n\n';
-    menu += '1: si\n';
-    menu += '2: no\n\n';
-    menu += 'Elija una opcion: ';
-    let codigo = parseInt(prompt(menu));
-
-    return codigo;
-}
-
-
- function EjecutarMenu2() {
-    let continuar
-    let codigoMenu = Menu2()
-    switch (codigoMenu) {
-        case 1:
-            continuar = true
-            break;
-        case 2:
-            alert('Salio del menu');
-            continuar = false;
-            break;
-        default:
-            alert('Opcion no valida. Intente de nuevo.');
-            break;
-    }
-    while (continuar===true) {
-        if(continuar===true){
-            EjecutarMenu()
-            continuar=false
-        }else{
-           continuar=false
-        }
-    }
- }
-
-function Menu3() {
-   menu = 'Menu listar libros\n\n'
-   menu += '1: Mostrar titulo\n'
-   menu += '2: Mostrar idioma\n'
-   menu += '3: Mostrar descripcion\n'
-   menu += '4: Mostrar genero\n'
-   menu += '5: Mostrar precio\n'
-   menu += '6: Mostrar ubicacion\n'
-   menu += '7: Mostrar fecha publicacion\n'
-   menu += '8: Mostrar dimensiones\n'
-   menu += '9: Mostrar peso\n'
-   menu += '10: Mostrar isbn\n'
-   menu += '11: Mostrar estado\n'
-   menu += '12: Mostrar descuento\n\n'
-   menu += 'elija una opcion\n'
-   let codigo = parseInt(prompt(menu))
-
-   return codigo
-}
-
-function EjecutarMenu3() {
-   let codigoMenu = Menu3()
-   switch (codigoMenu) {
-   case 1:
-       console.table(TITULO)
-       EjecutarMenu2()
-       break;
-   case 2:
-       console.table(IDIOMA)
-       EjecutarMenu2()
-       break; 
-   case 3:
-       console.table(DESCRIPCION)
-       EjecutarMenu2()
-       break;
-   case 4:
-       console.table(GENERO)
-       EjecutarMenu2()
-       break;
-   case 5:
-       console.table(PRECIO)
-       EjecutarMenu2()
-       break;
-   case 6:
-       console.table(UBICACION)
-       EjecutarMenu2()
-       break;
-   case 7:
-       console.table(FECHA_PUBLICACION)
-       EjecutarMenu2()
-       break;  
-   case 8:
-       console.table(DIMENSIONES)
-       EjecutarMenu2()
-       break;
-   case 9:
-       console.table(PESO)
-       EjecutarMenu2()
-       break;
-   case 10:
-       console.table(ISBN)
-       EjecutarMenu2()
-       break;
-   case 11:
-       console.table(ESTADO)
-       EjecutarMenu2()
-       break;
-   case 12:
-       Descuento()
-       EjecutarMenu2()
-       break; 
-   default: 
-       false;
-       break;
-   }
-}
-
-function Menu4() {
-   menu = 'Menu resumenes libros\n\n'
-   menu += '1: libros con precio mayores a 50\n'
-   menu += '2: lista de paginas de mayor a menor\n'
-   menu += '3: libros con precio mayores a 11 \n'
-   menu += '4: lista de libros con paginas menores de 100\n'
-   menu += '5: libros con precio mayores que 20 de mayor a menor\n\n'
-   menu += 'elija una opcion\n'
-   let codigo = parseInt(prompt(menu))
-
-   return codigo
-}
-
-function EjecutarMenu4() {
-   let codigoMenu = Menu4()
-   switch (codigoMenu) {
-   case 1:
-       console.table(LibrosPrecio50)
-       EjecutarMenu2()
-       break;
-   case 2:
-       console.table(PaginasLibros)
-       EjecutarMenu2()
-       break; 
-   case 3:
-       console.table(LibrosPrecio11)
-       EjecutarMenu2()
-       break;
-   case 4:
-       console.table(LibrosPaginas100)
-       EjecutarMenu2()
-       break;
-   case 5:
-       console.table(LibrosPrecio20)
-       EjecutarMenu2()
-       break;
-   default: 
-       false;
-       break;
-   }
-}
-
-function Menu5() {
-  menu = 'Menu busqueda de libros\n\n'
-  menu += '1: Buscar titulo\n'
-  menu += '2: Buscar autor\n'
-  menu += '3: Buscar fecha de publicacion\n'
-  menu += '4: Buscar genero\n'
-  menu += '5: Buscar idioma\n'
-  menu += '6: Buscar precio\n'
-  menu += '7: Buscar formato\n'
-  menu += '8: Buscar isbn\n'
-  menu += '9: Buscar descripcion\n'
-  menu += '10: Buscar estado\n'
-  menu += '11: Buscar ubicacion\n'
-  menu += '12: Buscar editorial\n'
-  menu += '13: Buscar paginas\n'
-  menu += '14: Buscar dimenciones\n'
-  menu += '15: Buscar peso\n\n'
-  menu += 'elija una opcion\n'
-  let codigo = parseInt(prompt(menu))
-
-  return codigo
-}
-
 function EjecutarMenu5() {
-  let codigoMenu = Menu5()
-  switch (codigoMenu) {
-  case 1:
-      BuscarTitulo()
-      EjecutarMenu2()
-      break;
-  case 2:
-      BuscarAutor()
-      EjecutarMenu2()
-      break; 
-  case 3:
-      BuscarFechaPublicacion()
-      EjecutarMenu2()
-      break;
-  case 4:
-      BuscarGenero()
-      EjecutarMenu2()
-      break;
-  case 5:
-      BuscarIdioma()
-      EjecutarMenu2()
-      break;
-  case 6:
-      BuscarPrecio()
-      EjecutarMenu2()
-      break;
-  case 7:
-      BuscarFormato()
-      EjecutarMenu2()
-      break; 
-  case 8:
-      BuscarIsbn()
-      EjecutarMenu2()
-      break;
-  case 9:
-      BuscarDescipcion()
-      EjecutarMenu2()
-      break;
-  case 10:
-      BuscarEstado()
-      EjecutarMenu2()
-      break;
-  case 11:
-      BuscarUbicacion()
-      EjecutarMenu2()
-      break;
-  case 12:
-      BuscarEditorial()
-      EjecutarMenu2()
-      break; 
-  case 13:
-      BuscarPaginas()
-      EjecutarMenu2()
-      break;
-  case 14:
-      BuscarDimensiones()
-      EjecutarMenu2()
-      break;
-  case 15:
-      BuscarPeso()
-      EjecutarMenu2()
-      break;
-  default: 
-      false;
-      break;
-  }
+    let codigoMenu = Menu5()
+    switch (codigoMenu) {
+    case 1:
+        BuscarTitulo()
+        EjecutarMenu2()
+        break;
+    case 2:
+        BuscarAutor()
+        EjecutarMenu2()
+        break; 
+    case 3:
+        BuscarFechaPublicacion()
+        EjecutarMenu2()
+        break;
+    case 4:
+        BuscarGenero()
+        EjecutarMenu2()
+        break;
+    case 5:
+        BuscarIdioma()
+        EjecutarMenu2()
+        break;
+    case 6:
+        BuscarPrecio()
+        EjecutarMenu2()
+        break;
+    case 7:
+        BuscarFormato()
+        EjecutarMenu2()
+        break; 
+    case 8:
+        BuscarIsbn()
+        EjecutarMenu2()
+        break;
+    case 9:
+        BuscarDescipcion()
+        EjecutarMenu2()
+        break;
+    case 10:
+        BuscarEstado()
+        EjecutarMenu2()
+        break;
+    case 11:
+        BuscarUbicacion()
+        EjecutarMenu2()
+        break;
+    case 12:
+        BuscarEditorial()
+        EjecutarMenu2()
+        break; 
+    case 13:
+        BuscarPaginas()
+        EjecutarMenu2()
+        break;
+    case 14:
+        BuscarDimensiones()
+        EjecutarMenu2()
+        break;
+    case 15:
+        BuscarPeso()
+        EjecutarMenu2()
+        break;
+    default: 
+        false;
+        break;
+    }
 }
 
   EjecutarMenu();
